@@ -40,7 +40,7 @@
 
         <h3> Attendace List: </h3>
         <ul>
-        <li>Lisa</li>
+        <li> <i>Lisa</i></li>
         <li>Ava</li>
         <li>Jayden</li>
         <li>Nick</li>
@@ -59,7 +59,8 @@
                     <li>Mascot</li>
                 </ul>
             </li>
-                
+
+            <hr>
 
             <li>
                 Contract
@@ -70,8 +71,8 @@
                 </ul>
             </li>
         </ol> 
-            
-            
+
+        <hr>    
     
     <section>
         <h4> Last time meeting: Bonding</h4>
@@ -79,6 +80,8 @@
         <p> We got to know each other. Have some fun games together. 
             <b> Really fun!! </b>
         </p>
+
+        <img src="IMG_7172.png" width="400" height="250" alt="Group 5 Bonding">
 
         <h4>Branding</h4>
 
@@ -90,15 +93,74 @@
 
         <h4> <strong> CONTRACT </strong></h4>
 
-        <p>We have to divide work equally. And, put the same effort. If you did
-            not participate in any meetings or project progress, then you're out
-            of the group. 
+        <p> <em>We have to divide work equally.</em> And, put the same effort. 
+            If you did not participate in any meetings or project progress, 
+            then you're out of the group. 
         </p>
+        <hr>
+
+        <video width="400" height="250" controls>
+            <source src="group5Introduction.mp4" type="video/mp4">
+        </video>
+
+        <br>
+        <br>
+
+        <p>Clapping</p>
+        <audio controls>
+            <source src="Clapping Sound Effects.mp3" type="audio/mp3">
+        </audio>
+        <hr>
     </section>
 
+    <details>
+        <summary>Project</summary>
+        <p>Come up with a project ideas such as fitness, games, development
+            or menu. Then, divide roles
+        </p>
+    </details>
 
-   <button style="background-color: pink; border-radius: 20px; padding: 10px 
-   20px;" type="button"> <b>CLICK!!</b> </button>
+    <hr>
+
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Notes</legend>
+            <label for="name"> Name </label>
+            <input type="text" id="name" name="name">
+            <br>
+            <br>
+            <input type="date" id="date" name="date">
+            <br>
+            <br>
+            <label for="meetings">Which Meetings?</label>
+
+            <select name="meetings" id="meetings">
+                <option value="">-- Select a meeting --</option>
+                <option value="040826">Meeting 04/08/26</option>
+                <option value="041226">Meeting 04/12/26</option>
+            </select>
+            <br>
+            <br>
+            <label for="tools"> Choose an AI Tools you want to use:</label>
+            <input list="tools" name="tool" id="tool">
+            <datalist id="tools">
+                <option value="Gemini"></option>
+                <option value="Claude"></option>
+                <option value="Codex"></option>
+            </datalist>
+            <br>
+            <br>
+            <label for="meetingNotes"> Meeting Notes Reminder: </label>
+            <textarea name="meetingNotes" id="meetingNotes"> 
+            </textarea>
+            
+        </fieldset>
+    </form>
+   
+
+    <button style="background-color: pink; border-radius: 20px; padding: 10px 
+        20px;" type="button"> <b>CLICK!!</b> </button>
+
     </main>
   </body>
 </html>
