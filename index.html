@@ -4,7 +4,7 @@
     <title> First CSE110 Group Meeting </title>
     <meta name = "description" content = "this is an example of note meeting
     in english"> 
-    <link rel= "icon" type= "image/png" href="/Downloads/rabbit.png">
+    <link rel="stylesheet" href="mystyle.css">
 
     <style>
         .myDiv {
@@ -22,55 +22,66 @@
   <body>
     <header> <div class = "myDiv">
         <nav> 
-            <a href="https://www.when2meet.com"> when2meet </a> 
-
-            <a href="https://www.notion.com"> Notes </a> 
+            <a href="https://www.when2meet.com" target="_blank">when2meet</a>
+            <a href="https://www.notion.com" target="_blank">Notes</a>
     
         </nav>
     </div> </header>
-    <main>  <div class="myDiv"> <h1> First Note Meeting </h1> </div>
+    <main>  <div class="myDiv"> <h1 id="main-title"> First Note Meeting </h1> 
+    </div>
 
         <div class = "myDate"> <h2> Date: 04-08-2026 </h2></div>
 
 
-        <div class="myDate">  <h3> Zoom link: <a href="https://www.zoom.com"> 
-            Zoom </a> </h3> </div>
+        <div class="myDate">
+            <h3>Zoom link: <a href="https://www.zoom.com" target="_blank">Zoom
+            </a></h3>
+        </div>
 
-        <h2> Topics: Group Kickoff</h2>
+        <h2 class="center-text"> Topics: Group Kickoff</h2>
 
-        <h3> Attendace List: </h3>
-        <ul>
+        <h3> Attendance List: </h3>
+        <ul class="attendance-list">
         <li> <i>Lisa</i></li>
         <li>Ava</li>
         <li>Jayden</li>
         <li>Nick</li>
         </ul>
 
-        <hr>
+    <hr>
 
         <h3> Agenda: </h3>
-        <ol> 
-            <li>
-                Branding
+        <div class="agenda-grid">
+            <div class="agenda-item">
+                <h4>Branding</h4>
                 <ul>
                     <li>Name</li>
                     <li>Color</li>
                     <li>Logo</li>
                     <li>Mascot</li>
                 </ul>
-            </li>
-
-            <li>
-                Contract
-                <ul>
-                    <li>Purpose</li>
-                    <li>Standards</li>
-                    <li>Roles, Responsibilities</li>
-                </ul>
-            </li>
-        </ol> 
-
-        <hr>    
+        </div>
+        
+        <div class="agenda-item">
+            <h4>Contract</h4>
+            <ul>
+                <li>Purpose</li>
+                <li>Standards</li>
+                <li>Roles</li>
+            </ul>
+        </div>
+        
+        <div class="agenda-item">
+            <h4>Planning</h4>
+            <ul>
+                <li>Ideas</li>
+                <li>Timeline</li>
+                <li>Tasks</li>
+            </ul>
+        </div>
+    </div>
+    
+    <hr>    
     
     <section>
         <h4> Last time meeting: Bonding</h4>
@@ -114,19 +125,21 @@
     <details>
         <summary>Project</summary>
         <p>Come up with a project ideas such as fitness, games, development
-            or menu. Then, divide roles
+        or menu. Then, divide roles
         </p>
     </details>
 
     <hr>
 
-    <form action="/action_page.php">
+    <form action="/action_page.php" class="margin-long padding-long border-long 
+    center-box">
         <fieldset>
             <legend>Notes</legend>
             <label for="name"> Name </label>
             <input type="text" id="name" name="name">
             <br>
             <br>
+            <label for="date"> Date </label>
             <input type="date" id="date" name="date">
             <br>
             <br>
@@ -156,8 +169,10 @@
     </form>
    
 
-    <button style="background-color: pink; border-radius: 20px; padding: 10px 
-        20px;" type="button"> <b>CLICK!!</b> </button>
+    <hr>
+    <button class="margin-short padding-short border-short" type="button">
+        <b>CLICK!!</b>
+    </button>
 
     </main>
   </body>

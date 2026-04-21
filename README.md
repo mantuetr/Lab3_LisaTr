@@ -1,3 +1,3 @@
 # Lab 3 - Starter
 
-https://github.com/mantuetr/Lab3_LisaTr
+https://mantuetr.github.io/Lab3_LisaTr/
